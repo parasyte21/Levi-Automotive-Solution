@@ -119,17 +119,17 @@
     cursor: pointer;
 }
 
-.Services {
+#Services {
   justify-content: space-between;
 }
 
-.Services img {
+#Services img {
   border-radius: 20px;
   width: 500px;
   margin-top: 30px;
 }
 
-.Services p {
+#Services p {
   font-size: 25px;
   font-family: sans-serif;
 }
