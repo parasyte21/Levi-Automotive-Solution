@@ -20,10 +20,10 @@ if (contactBtn && popup && closeBtn) {
 
 document.querySelectorAll('.menu a').forEach(link => {
   link.addEventListener('click', function (e) {
-    e.preventDefault();
     const target = this.getAttribute('data-href');
-    if (!target) return;
+    if (!target) return; // 没 data-href 就让它走默认行为
 
+    e.preventDefault();
     this.classList.add('pressed');
     setTimeout(() => {
       window.location.href = target;
