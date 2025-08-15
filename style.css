@@ -5,34 +5,35 @@
 }
 
 .navbar {
-  display: flex;
-  background-color: black;
-  padding: 20px 20px;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    background-color: black;
+    padding: 20px 20px;
+    justify-content: space-between;
 }
 
+
+
 .menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
 }
 
 .menu a {
-  color: aliceblue;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: sans-serif;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 .menu a:hover {
-  color: red;
+    color: red;
 }
 
 .menu li {
@@ -40,70 +41,71 @@
 }
 
 .contact-button {
-  border: none;
-  color: aliceblue;
-  background-color: black;
-  font-weight: 600;
-  font-size: 20px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
+
 .contact-button:hover {
-  color: red;
-  transform: scale(1.1);
+    color: red;
+    transform: scale(1.1);
 }
 
 .contact-button:active {
-  transform: scale(0.9);
+    transform: scale(0.9);
 }
 
 .popup {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .popup-content {
-  background-image: url(popup\ background.png);
-  background-size: cover;
-  background-position: center;
-  margin: 200px auto;
-  padding: 50px;
-  width: 300px;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
+    background-image: url(popup\ background.png);
+    background-size: cover;
+    background-position: center;
+    margin: 200px auto;
+    padding: 50px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
 }
 
 .popup-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-  border-radius: 12px;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑 */
+    z-index: 0;
+    border-radius: 12px;
 }
 
 .popup-content * {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .popup-content a {
-  color: white;
-  text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 
 .popup-content p {
-  font-size: 20px;
-  font-weight: bold;
-  color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 .popup-content h2 {
@@ -111,24 +113,20 @@
 }
 
 .close-button {
-  position: absolute;
-  top: 10px; right: 15px;
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color:white;
 }
 
 #Services {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
 }
 
 #Services img {
   border-radius: 20px;
-  max-width: 100%;
-  height: auto;
+  width: 500px;
   margin-top: 30px;
 }
 
@@ -138,37 +136,41 @@
 }
 
 .Location-logo {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .Location {
-  align-items: center;
-  display: inline-flex;
-  background-color: #000;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  padding: 8px 12px;
-  transition: transform 0.2s ease, color 0.2s ease;
+    align-items: center;
+    display: flex;
+    display: inline-block;
+    background-color: #000000; 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .Location:hover {
-  color: red;
-  transform: scale(1.05);
+    color: red;
+    transform: scale(1.05);
 }
 
 .Location:active {
-  transform: scale(1.0);
+    transform: scale(1.0);
 }
 
+.Location-logo {
+    gap: 5px;
+}
+
+
 .site-footer {
-  background-color: #161616;
+  background-color: #161616; 
   color: white;
   display: flex;
   justify-content: space-between;
@@ -216,54 +218,4 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-/* ---------- 平板 ---------- */
-@media (max-width: 1024px) {
-  .menu a {
-    font-size: 18px;
-  }
-  #Services p {
-    font-size: 20px;
-  }
-}
-
-/* ---------- 手机 ---------- */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .menu a {
-    font-size: 16px;
-  }
-
-  #Services {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  #Services p {
-    font-size: 18px;
-  }
-
-  .popup-content {
-    width: 90%;
-    margin: 100px auto;
-    padding: 20px;
-  }
-
-  .site-footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
 }
